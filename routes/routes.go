@@ -13,11 +13,11 @@ func SetupRoutes(router *gin.Engine) {
 
 	router.GET("/projects", handlers.ProjectsHandler)
 
-	router.GET("/project/:id", handlers.HealtHandler)
+	// router.GET("/project/:id", handlers.HealtHandler)
 
-	router.GET("/skills", handlers.HealtHandler)
+	// router.GET("/skills", handlers.HealtHandler)
 
-	router.GET("/contact", handlers.HealtHandler)
+	// router.GET("/contact", handlers.HealtHandler)
 
-	router.POST("/send-message", handlers.HealtHandler)
+	// router.POST("/send-message", handlers.HealtHandler)
 }

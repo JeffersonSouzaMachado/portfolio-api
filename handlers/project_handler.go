@@ -3,7 +3,7 @@ package handlers
 import (
 	"net/http"
 
-	"portfolio-api/projects"
+	"portfolio-api/services"
 
 	"github.com/gin-gonic/gin"
 )
@@ -11,13 +11,7 @@ import (
 func ProjectsHandler(context *gin.Context) {
 	language := context.DefaultQuery("lang", "en")
 
-	var response []projects.ProjectResponse
-
-	if language == "pt" {
-		response = projects.ProjectsPortuguese()
-	} else {
-		response = projects.ProjectsEnglish()
-	}
+	response := services.GetProjects(language)
 
 	context.JSON(http.StatusOK, response)
 }

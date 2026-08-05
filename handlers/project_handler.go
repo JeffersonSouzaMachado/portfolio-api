@@ -14,22 +14,10 @@ func ProjectsHandler(context *gin.Context) {
 	var response []projects.ProjectResponse
 
 	if language == "pt" {
-		response = ProjectsPortuguese()
+		response = projects.ProjectsPortuguese()
 	} else {
-		response = ProjectsEnglish()
+		response = projects.ProjectsEnglish()
 	}
 
 	context.JSON(http.StatusOK, response)
-}
-
-func ProjectsPortuguese() []projects.ProjectResponse {
-	return []projects.ProjectResponse{
-		projects.HelpneiPortuguese(),
-	}
-}
-
-func ProjectsEnglish() []projects.ProjectResponse {
-	return []projects.ProjectResponse{
-		projects.HelpneiEnglish(),
-	}
 }

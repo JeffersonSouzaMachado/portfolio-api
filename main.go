@@ -12,6 +12,7 @@ import (
 )
 
 func main() {
+	gin.SetMode(gin.ReleaseMode)
 
 	router := gin.Default()
 
@@ -22,9 +23,6 @@ func main() {
 
 	router.Use(cors.New(cors.Config{
 		AllowOrigins: []string{
-			// "http://localhost:3000",
-			// "http://localhost:5000",
-			// "http://localhost:8080",
 			"https://thedevjeffportfolio.web.app",
 		},
 		AllowMethods: []string{
@@ -46,7 +44,9 @@ func main() {
 		port = "8080"
 	}
 
-	err = router.Run(":" + port)
+	log.Printf("Servidor iniciado na porta %s", port)
+
+	err = router.Run("0.0.0.0:" + port)
 
 	if err != nil {
 		log.Fatal("Erro ao iniciar servidor: ", err)

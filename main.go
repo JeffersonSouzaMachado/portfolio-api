@@ -23,6 +23,7 @@ func main() {
 	router.Use(cors.New(cors.Config{
 		AllowOrigins: []string{
 			"https://thedevjeffportfolio.web.app",
+			"http://localhost:3000",
 		},
 		AllowMethods: []string{
 			"GET",

@@ -56,18 +56,22 @@ func metricsEnglish() []MetricsResponse {
 		{
 			Title: "04+",
 			Text:  "years experience",
+			Color: "seconday",
 		},
 		{
 			Title: "14",
 			Text:  "production apps",
+			Color: "accent",
 		},
 		{
 			Title: "5.6M",
 			Text:  "active users",
+			Color: "secondaryFixedDim",
 		},
 		{
 			Title: "110+",
 			Text:  "prs merged/mo",
+			Color: "errorContainer",
 		},
 	}
 }

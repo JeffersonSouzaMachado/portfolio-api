@@ -9,6 +9,7 @@ import (
 type MetricsResponse struct {
 	Title string `json:"title"`
 	Text  string `json:"text"`
+	Color string `json:"color"`
 }
 
 func MetricsHandler(context *gin.Context) {
@@ -30,18 +31,22 @@ func metricsPortuguese() []MetricsResponse {
 		{
 			Title: "04+",
 			Text:  "anos de experiência",
+			Color: "seconday",
 		},
 		{
 			Title: "14",
 			Text:  "Apps em produção",
+			Color: "accent",
 		},
 		{
 			Title: "5.6M",
 			Text:  "usuários ativos",
+			Color: "secondaryFixedDim",
 		},
 		{
 			Title: "110+",
 			Text:  "PRs Mergeados/ME",
+			Color: "errorContainer",
 		},
 	}
 }

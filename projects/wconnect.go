@@ -3,7 +3,7 @@ package projects
 func WconnectPortuguese() ProjectResponse {
 	return ProjectResponse{
 
-		ID:                 2,
+		ID:                 3,
 		CardImage:          "pulsetrip_main",
 		ShortCompanyName:   "WConnect",
 		ShortDescription:   "O aplicativo Pulsetrip tem como finalidade automatizar processos para reservas de vôos, hoteis e veiculos.",
@@ -22,7 +22,7 @@ func WconnectPortuguese() ProjectResponse {
 func WconnectEnglish() ProjectResponse {
 	return ProjectResponse{
 
-		ID:                 2,
+		ID:                 3,
 		CardImage:          "pulsetrip_main",
 		ShortCompanyName:   "WConnect",
 		ShortDescription:   "The Pulsetrip app is designed to automate booking processes for flights, hotels, and vehicles.",
@@ -95,5 +95,5 @@ func WconnectProjectTechStack() []TechStackResponse {
 			AssetType: "icon",
 		},
 	}
-	
+
 }

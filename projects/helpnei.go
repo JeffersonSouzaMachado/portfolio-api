@@ -1,6 +1,5 @@
 package projects
 
-
 func HelpneiPortuguese() ProjectResponse {
 	return ProjectResponse{
 
@@ -15,6 +14,7 @@ func HelpneiPortuguese() ProjectResponse {
 		AppSolution:        "Reestruturei o fluxo de busca em duas etapas: a cada novo cadastro, buscávamos apenas a latitude e longitude do usuário (gratuito). Com essas coordenadas, consultávamos uma tabela de cache com os condomínios já mapeados na região. Caso já existissem dados para aquele ponto, nenhuma nova chamada era feita. Caso contrário, buscávamos os condomínios num raio de 10 km — dado que já retornava em uma única chamada — e armazenávamos o resultado no cache para reutilização em cadastros futuros na mesma área.",
 		TechStack:          HelpneiProjectTechStack(),
 		AppMockups:         HelpneiAppMockups(),
+		ProjectInfo:        HelpneiAppInfo(),
 	}
 }
 
@@ -32,6 +32,16 @@ func HelpneiEnglish() ProjectResponse {
 		AppSolution:        "I restructured the lookup flow into two steps: for each new registration, we would fetch only the user's latitude and longitude (free of charge). Using those coordinates, we would query a cache table of buildings/condominiums already mapped in the region. If data already existed for that point, no new call was made. Otherwise, we would search for buildings within a 10 km radius — a query that already returned in a single call — and store the result in the cache for reuse in future registrations in the same area.",
 		TechStack:          HelpneiProjectTechStack(),
 		AppMockups:         HelpneiAppMockups(),
+		ProjectInfo:        HelpneiAppInfo(),
+	}
+}
+
+func HelpneiAppInfo() ProjectInfoResponse {
+	return ProjectInfoResponse{
+		AppStoreUrl:  "https://apps.apple.com/br/app/helpnei/id6463846287",
+		PlayStoreUrl: "https://play.google.com/store/apps/details?id=com.helpnei.mobile",
+		Downloads:    1,
+		Rate:         "4.0",
 	}
 }
 

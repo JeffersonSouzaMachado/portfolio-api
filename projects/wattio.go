@@ -17,6 +17,7 @@ func WattioPortuguese() ProjectResponse {
 		AppSolution: "Liderei a migração dos 10 aplicativos para um único monorepo, utilizando Flutter Flavors para gerenciar as configurações específicas de cada cliente (ícones, cores, nomes e endpoints) e feature flags para controlar quais funcionalidades estariam disponíveis em cada versão. Implementei pipelines de CI/CD com GitHub Actions integrados ao AWS Amplify, automatizando o build e deploy de todas as flavors a partir de uma única base de código. Isso eliminou a duplicação de código, reduziu drasticamente o tempo de entrega de novas features e correções, e garantiu consistência entre todos os apps do portfólio.",
 		TechStack:   WattioProjectTechStack(),
 		AppMockups:  WattioAppMockups(),
+		ProjectInfo: WattioAppInfo(),
 	}
 }
 
@@ -37,6 +38,16 @@ func WattioEnglish() ProjectResponse {
 		AppSolution: "Led the migration of the 10 applications into a single monorepo, using Flutter Flavors to manage client-specific configurations (icons, colors, names, and endpoints) and feature flags to control which functionalities were available in each version. Implemented CI/CD pipelines with GitHub Actions integrated with AWS Amplify, automating the build and deployment of all flavors from a single codebase. This eliminated code duplication, drastically reduced the delivery time for new features and fixes, and ensured consistency across the entire app portfolio.",
 		TechStack:   WattioProjectTechStack(),
 		AppMockups:  WattioAppMockups(),
+		ProjectInfo: WattioAppInfo(),
+	}
+}
+
+func WattioAppInfo() ProjectInfoResponse {
+	return ProjectInfoResponse{
+		AppStoreUrl:  "https://apps.apple.com/br/app/wattio/id6504369812",
+		PlayStoreUrl: "https://play.google.com/store/apps/details?id=com.wattiosaas",
+		Downloads: 1,
+		Rate: "4,9",
 	}
 }
 

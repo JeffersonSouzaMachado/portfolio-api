@@ -12,10 +12,18 @@ type ProjectResponse struct {
 	AppSolution        string              `json:"appSolution"`
 	TechStack          []TechStackResponse `json:"techStack"`
 	AppMockups         []string            `json:"appMockups"`
+	ProjectInfo        ProjectInfoResponse `json:"projectInfo"`
 }
 
 type TechStackResponse struct {
 	Icon      string `json:"icon"`
 	Stack     string `json:"stack"`
 	AssetType string `json:"assetType"`
+}
+
+type ProjectInfoResponse struct {
+	Downloads    int16  `json:"downloads"`
+	PlayStoreUrl string `json:"playStoreUrl"`
+	AppStoreUrl  string `json:"appStoreUrl"`
+	Rate         string `json:"rate"`
 }

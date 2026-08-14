@@ -16,6 +16,7 @@ func WconnectPortuguese() ProjectResponse {
 		AppSolution:  "Desenvolvi widgets responsivos personalizados, utilizando LayoutBuilder e MediaQuery para adaptar dinamicamente o layout conforme o tamanho da tela, definindo breakpoints específicos para mobile, tablet e desktop. Refatorei componentes reutilizados em múltiplas telas para que se ajustassem de forma flexível, evitando duplicação de código entre as versões Web e mobile. Isso resultou em uma experiência mais consistente entre plataformas, mantendo uma única base de código Flutter Web para os três formatos.",
 		TechStack:    WconnectProjectTechStack(),
 		AppMockups:   WconnectAppMockups(),
+			ProjectInfo: WconnectAppInfo(),
 	}
 }
 
@@ -35,6 +36,16 @@ func WconnectEnglish() ProjectResponse {
 		AppSolution:  "I developed custom responsive widgets using LayoutBuilder and MediaQuery to dynamically adapt the layout based on screen size, defining specific breakpoints for mobile, tablet, and desktop. I refactored components reused across multiple screens so they could adjust flexibly, avoiding code duplication between the Web and mobile versions. This resulted in a more consistent experience across platforms while maintaining a single Flutter Web codebase for all three formats.",
 		TechStack:    WconnectProjectTechStack(),
 		AppMockups:   WconnectAppMockups(),
+		ProjectInfo: WconnectAppInfo(),
+	}
+}
+
+func WconnectAppInfo() ProjectInfoResponse {
+	return ProjectInfoResponse{
+		AppStoreUrl:  "https://apps.apple.com/br/app/pulse-trip-viajante/id6758778267",
+		PlayStoreUrl: "https://play.google.com/store/apps/details?id=br.com.pulsetrip.traveler",
+		Downloads: 5,
+		Rate: "5",
 	}
 }
 
